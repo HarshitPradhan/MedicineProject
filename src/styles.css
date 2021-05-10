@@ -16,16 +16,9 @@ input.form-control:focus{
 }
 
 button[type=submit].btn{
-    display: grid;  
-
     border-radius: 20px;
     background-color: #04c582;
     color: #fff;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 div.form-group label:not(.text-danger){
