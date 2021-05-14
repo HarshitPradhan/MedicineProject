@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
@@ -64,5 +65,51 @@ export class UserService {
     });
     return isMatch;
   }
+
+
+
+  //Admin related services starts from here
+  getCatList():Observable<any[]>{
+    return this.http.get<any>(this.BaseURI + '/Category');
+  }
+  addCategory(val:any){
+    return this.http.post(this.BaseURI + '/Category' , val);
+  }
+  updateCategory(val:any){
+    return this.http.put(this.BaseURI + '/Category' , val);
+  }
+  deleteCategory(val:any){
+    return this.http.delete(this.BaseURI + '/Category/' + val);
+  }
+
+
+
+
+  getMedList():Observable<any[]>{
+    return this.http.get<any>(this.BaseURI + '/Medicine');
+  }
+  getMedicineDetails(val:any){
+    return this.http.get<any>(this.BaseURI + '/Medicine/' + val);
+  }
+  addMedicine(val:any){
+    return this.http.post(this.BaseURI + '/Medicine' , val);
+  }
+  updateMedicine(val:any){
+    return this.http.put(this.BaseURI + '/Medicine' , val);
+  }
+  deleteMedicine(val:any){
+    return this.http.delete(this.BaseURI + '/Medicine/' + val);
+  }
+
+
+
+  getUserList():Observable<any[]>{
+    return this.http.get<any>(this.BaseURI + '/UserProfile/GetAllUsers');
+  }
+  deleteUser(val:any){
+    return this.http.delete(this.BaseURI + '/UserProfile/' + val);
+  }
+
+
 
 }

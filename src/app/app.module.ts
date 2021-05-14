@@ -14,6 +14,18 @@ import { HomeComponent } from './home/home.component';
 import { AuthInterceptor } from './auth/auth.intercptor';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
+import { CategoryComponent } from './admin-panel/category/category.component';
+import { ShowCatComponent } from './admin-panel/category/show-cat/show-cat.component';
+import { AddEditCatComponent } from './admin-panel/category/add-edit-cat/add-edit-cat.component';
+import { MedicineComponent } from './admin-panel/medicine/medicine.component';
+import { ShowMedComponent } from './admin-panel/medicine/show-med/show-med.component';
+import { AddEditMedComponent } from './admin-panel/medicine/add-edit-med/add-edit-med.component';
+import { ForuserComponent } from './admin-panel/foruser/foruser.component';
+import { CartComponent } from './cart/cart.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+// import { CartComponent } from './home/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +35,18 @@ import { ForbiddenComponent } from './forbidden/forbidden.component';
     LoginComponent,
     HomeComponent,
     AdminPanelComponent,
-    ForbiddenComponent
+    ForbiddenComponent,
+    CategoryComponent,
+    ShowCatComponent,
+    AddEditCatComponent,
+    MedicineComponent,
+    ShowMedComponent,
+    AddEditMedComponent,
+    ForuserComponent,
+    CartComponent,
+    FooterComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserAnimationsModule,

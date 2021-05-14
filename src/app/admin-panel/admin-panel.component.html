@@ -1,1 +1,47 @@
-<p>admin-panel works!</p>
+
+  <div class="container">
+
+    <h3 class="d-flex justify-content-center">Admin Panel</h3>
+    <h5 class="d-flex justify-content-center">Manage medicines,categories and users</h5>
+
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+        <div class="navbar-nav mr-auto">
+            <ul class="navbar-nav">
+                
+                <li class="nav-item">
+                <button routerLink="/adminpanel/category"
+                    class="m-1 btn btn-light btn-outline-primary" Button>Category</button>
+                </li>
+
+                <li class="nav-item">
+                <button routerLink="/adminpanel/medicine"
+                    class="m-1 btn btn-light btn-outline-primary" Button>Medicine</button>
+                </li>
+
+                <li class="nav-item">
+                <button routerLink="/adminpanel/foruser"
+                    class="m-1 btn btn-light btn-outline-primary" Button>User</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="nav navbar-right">
+
+            <li class="nav-item">
+                <button routerLink="/home"
+                    class="m-1 btn btn-light btn-outline-primary" Button>Back to Home</button>
+            </li>
+            <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+        </div>
+
+    </nav>
+
+<router-outlet></router-outlet>
+
+</div>
+
+
+
+
